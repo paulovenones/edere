@@ -1,8 +1,4 @@
 let stages = {
-	0: {
-		descricao: "primeiro",
-		obj: require("../stages/00-welcome.js"),
-	},
 	1: {
 		descricao: "segundo",
 		obj: require("../stages/01-hungry-person.js"),

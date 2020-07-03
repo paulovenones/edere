@@ -2,10 +2,9 @@ const venom = require("venom-bot");
 const fs = require("fs");
 const data = require("../data");
 const stages = require("./stages");
-const { findClient, addClient, nextStage } = require("./utils");
-
-let user;
+const { welcome, findClient, addClient, nextStage } = require("./utils");
 let index = 0;
+let user;
 
 function getStage(user) {
 	return user.stage;
@@ -14,10 +13,8 @@ function getStage(user) {
 venom.create().then((client) => start(client));
 function start(client) {
 	client.onMessage((message) => {
-		var foundClient = findClient(message.from);
-		console.log(foundClient);
+		let foundClient = findClient(message.from);
 		userStage = getStage(foundClient);
-		console.log(userStage);
 		if (userStage == 0) {
 			client.sendText(message.from, "Oi, aqui é a Édere!");
 			client.sendText(
@@ -28,6 +25,7 @@ function start(client) {
 					"3 - Produtor local de alimentos\n" +
 					"4 - Entregador"
 			);
+
 			nextStage(foundClient);
 			fs.writeFile("src/data.json", JSON.stringify(data, null, 2), function (
 				err

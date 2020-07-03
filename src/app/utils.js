@@ -1,6 +1,18 @@
 const data = require("../data");
 const { addClient } = require("./utils");
 
+exports.welcome = function () {
+	client.sendText(message.from, "Oi, aqui é a Édere!");
+	client.sendText(
+		message.from,
+		"Pra que eu possa te atender melhor, me conta se você é:\n\n" +
+			"1 - Uma pessoa com fome\n" +
+			"2 - Empreendedor de um restaurante\n" +
+			"3 - Produtor local de alimentos\n" +
+			"4 - Entregador"
+	);
+};
+
 exports.addClient = function (number) {
 	console.log("kkkkkkkkk");
 	let id = 1;
@@ -24,7 +36,7 @@ exports.addClient = function (number) {
 };
 
 exports.findClient = function (number) {
-	user = data.clients.find(function (client, foundIndex) {
+	let user = data.clients.find(function (client, foundIndex) {
 		if (number == client.number) {
 			index = foundIndex;
 			return true;
@@ -41,7 +53,6 @@ exports.findClient = function (number) {
 			}
 		});
 	}
-
 	return user;
 };
 
