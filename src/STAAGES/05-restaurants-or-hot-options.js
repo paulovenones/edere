@@ -1,10 +1,8 @@
 // const database = require("../database");
-const { findClient, nextStage } = require("../app/utils");
 
 function execute(user, message) {
-	if (message.includes("rest") || message.includes("Rest")) {
-		foundClient = findClient(user);
-		nextStage(foundClient);
+	if (message === "restaurantes") {
+		// database.db[user].stage = 6;
 		return [
 			"Ah, achei que você ia querer conferir mesmo. Esses são os nomes dos " +
 				"restaurantes já com o @ pra você procurar nas suas redes 😉\n\n" +
@@ -12,9 +10,9 @@ function execute(user, message) {
 				"2 - @ciclano\n" +
 				"3 - @beltrano\n" +
 				"4 - @cislano\n" +
-				"5 - @geltrano\n" +
+				"5 - @geltranoo\n" +
 				"6 - @edevardo\n",
-			`E agora, ${foundClient.name}!? Prefere ver o cardápio de algum ou quer que eu ` +
+			`E agora, ${database.db[user].name}!? Prefere ver o cardápio de algum ou quer que eu ` +
 				"te indique os 5 pratos japoneses que estão saindo mais na sua região?",
 		];
 	}

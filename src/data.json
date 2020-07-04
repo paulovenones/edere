@@ -1,12 +1,13 @@
 {
-  "clients": [
-    {
-      "id": 1,
-      "stage": 2,
-      "items": [],
-      "name": "",
-      "city": "",
-      "number": "5511966410551@c.us"
-    }
-  ]
+	"clients": [
+		{
+			"id": 1,
+			"stage": 0,
+			"name": "Paulo",
+			"city": " São Paulo",
+			"neighborhood": "Campos Elíseos",
+			"items": [],
+			"number": "5511966410551@c.us"
+		}
+	]
 }

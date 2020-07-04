@@ -46,7 +46,21 @@ exports.findClient = function (number) {
 	// if is a new client
 	if (!user) {
 		console.log("nao achei");
-		addClient(number);
+		let id = 1;
+		const lastClient = data.clients[data.clients.length - 1];
+
+		if (lastClient) {
+			id = lastClient.id + 1;
+		}
+		data.clients.push({
+			id,
+			stage: 0,
+			name: "",
+			city: "",
+			neighborhood: "",
+			items: [],
+			number: `${number}`,
+		});
 		user = data.clients.find(function (client) {
 			if (number == client.number) {
 				return true;

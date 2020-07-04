@@ -2,7 +2,7 @@ const venom = require("venom-bot");
 const fs = require("fs");
 const data = require("../data");
 const stages = require("./stages");
-const { welcome, findClient, addClient, nextStage } = require("./utils");
+const { findClient, nextStage } = require("./utils");
 let index = 0;
 let user;
 

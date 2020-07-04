@@ -1,13 +1,14 @@
 // const database = require("../database");
+const { findClient, nextStage } = require("../app/utils");
 
 function execute(user, message) {
-	if (message === "1") {
-		database.db[user].stage = 8;
-		return [
-			`E agora, ${database.db[user].name}!? Prefere ver o cardápio de algum, ou quer que eu` +
-				"te indique os 5 pratos japoneses que estão saindo mais na sua região?",
-		];
-	}
+	foundClient = findClient(user);
+	foundClient.stage = 0;
+	return [
+		"Nossa, acho que isso é olho gordo, porque era bem esse que eu ia escolher! " +
+			"Você vai querer bebida junto?",
+		"🚧🚧CUIDADO!!! Estou em obra daqui para frente!!!🚧🚧",
+	];
 }
 
 exports.execute = execute;
