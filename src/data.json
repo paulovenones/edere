@@ -11,6 +11,18 @@
       "items": [],
       "number": "558186669938@c.us",
       "address": "Rua Antônio Dias, 68"
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "name": "Mari",
+      "city": "São Pedro",
+      "addressLine1": "",
+      "addressLine2": "Rio Tietê",
+      "neighborhood": "Bela são Pedro",
+      "items": [],
+      "number": "5511966410551-1593305178@g.us",
+      "address": "Obrigada"
     }
   ]
 }
