@@ -2,6 +2,7 @@ const { findClient, nextStage } = require("../app/utils");
 const cardapio = require('../app/hot-options-menu')
 
 let numberOption = 0;
+let stringPrice = "";
 
 function execute(user, message) {
 	foundClient = findClient(user);
@@ -14,7 +15,6 @@ function execute(user, message) {
 
 			numberOption++;
 
-			let stringPrice = "";
 			stringPrice += cardapio.menu[element].price[0];
 			stringPrice += cardapio.menu[element].price[1];
 			stringPrice += ",";
@@ -42,12 +42,32 @@ function execute(user, message) {
 			"mas é só você mandar um *oi* que eu volto 🎶 😜"
 		];
 	} else if (message.includes("*")) {
-		nextStage(foundClient);		
-		
-		return[
+		nextStage(foundClient);
+
+		let resumoPedido = "";
+		let name;
+		let price;
+
+		Object.keys(foundClient.items).forEach(element => {
+			name = foundClient.items[element].name;
+			
+			price += foundClient.items[element].price[0];
+			price += foundClient.items[element].price[1];			
+			price += ",";
+			price += foundClient.items[element].price[3];
+			price += foundClient.items[element].price[4];
+
+			resumoPedido += `${name} --- R$ ${price}`;
+
+		});
+
+		return [
 			"Certo, tudo salvo!",
 			//mostrar items e valor total
-			"Aqui está seu pedido: ",
+			"Aqui está um resumo de seu pedido:\n\n" +
+			`${resumoPedido}`,
+
+			//pedir confirmação
 			"Digite *** mais uma vez para confirmar"
 		];
 
