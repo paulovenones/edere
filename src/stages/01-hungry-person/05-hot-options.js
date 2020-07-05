@@ -66,17 +66,17 @@ function execute(user, message) {
 			"Aqui está um resumo de seu pedido:\n\n" +
 			`${resumoPedido}`,
 			//pedir confirmação
-			"Digite *** mais uma vez para confirmar"
+			"Digite * mais uma vez para confirmar"
 		];
 
 	} else if (message.includes(`${parseInt(message.trim()) <= numberOption ? message.trim() : false}`)) {
 
-		console.log(foundClient.items.push(cardapio.menu[message.trim()]));
+		foundClient.items.push(cardapio.menu[message.trim()]);
 
 		return [
 			`Certo! O item ${cardapio.menu[message.trim()].name} já tá separado pra você.`,
 			"Se quiser adicionar mais algum item é só digitar o número. " +
-			"Caso queria finalizar, pode digitar ***, tá?",
+			"Caso queria finalizar, pode digitar *, tá?",
 			"Ah, e você pode cancelar tudo digitando *#*."
 		];
 

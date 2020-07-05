@@ -1,4 +1,4 @@
-const { findClient, nextStage } = require("../app/utils");
+const { findClient, nextStage } = require("../../app/utils");
 
 function execute(user, message) {
 	foundClient = findClient(user);
@@ -12,7 +12,7 @@ function execute(user, message) {
 	}
 
 	if (message.includes("1")) {
-		foundClient.stage = 1;
+		nextStage(foundClient);
 		return [
 			"Que ótimo! Acabei de comer por aqui e posso te indicar uns restaurantes" +
 			"bem legais. Me diga seu nome e, em seguida, sua cidade, separados por vírgula.",
@@ -28,7 +28,7 @@ function execute(user, message) {
 			"Vamos começar, me conta seu nome"
 		];
 
-	} else if (message.includes("3")) {
+	} else if (message.includes("3") || message.includes("4")) {
 		return [
 			"Ops! Ainda estamos trabalhando nessas opções. Por enquanto, apenas a opção 1 " +
 			"está disponível, mas em breve a ajeita tudo, tá?",
@@ -37,24 +37,7 @@ function execute(user, message) {
 			"0 - Não. Outra hora a gente se fala, Édere"
 		];
 
-	} else if (message.includes("4")) {
-		return [
-			"Ops! Ainda estamos trabalhando nessas opções. Por enquanto, apenas a opção 1 " +
-			"está disponível, mas em breve a ajeita tudo, tá?",
-			"Então, quer fazer algum pedido?\n\n" +
-			"1 - Sim, tô com fome!\n" +
-			"0 - Não. Outra hora a gente se fala, Édere"
-		];
-
-	} else {
-		return [
-			"Ops! Ainda estamos trabalhando nessas opções. Por enquanto, apenas a opção 1 " +
-			"está disponível, mas em breve a ajeita tudo, tá?",
-			"Então, quer fazer algum pedido?\n\n" +
-			"1 - Sim, tô com fome!\n" +
-			"0 - Não. Outra hora a gente se fala, Édere"
-		];
-	}
+	} else { }
 }
 
 exports.execute = execute;
