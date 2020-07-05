@@ -8,9 +8,9 @@ function execute(user, message) {
         return [
             "Ótimo. Você quer mais alguma coisa? Esse restaurante " +
             "tem todas essas outras opções no cardápio:\n\n" +
-            "• Entradas\n" +
-            "• Acompanhamentos\n" +
-            "• Sobremesas"
+            "1 - Entradas\n" +
+            "2 - Acompanhamentos\n" +
+            "3 - Sobremesas"
         ];
     }
 }

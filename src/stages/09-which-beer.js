@@ -13,7 +13,6 @@ function execute(user, message) {
             "3 - Kaiser\n\n" +
             "Qual você vai escolher hoje?"
         ];
-
     }
 }
 

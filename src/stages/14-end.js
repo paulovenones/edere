@@ -5,7 +5,7 @@ function execute(user, message) {
     foundClient.stage = 0;
 
     return [
-        `Ótimo, ${foundClient.name}! Já passei o seu pedido para o restaurante e alguém já entra em`  +
+        `Ótimo, ${foundClient.name}! Já passei o seu pedido para o restaurante e alguém já entra em `  +
         "contato com você pra falar a previsão do seu pedido, tá bom? " +
         "Vou continuar minha vida porque meu zap tá bombando hoje 😎 " +
         "Mas não se preocupa! Vou esperar 1h depois que o seu entregador " +

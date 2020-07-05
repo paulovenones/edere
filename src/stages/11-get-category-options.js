@@ -6,10 +6,10 @@ function execute(user, message) {
         nextStage(foundClient);
         
         return [
-            "Ah, no seu lugar eu também ia querer. Tem essas aqui, ó:\n\n" +            
-            "• Pudim\n" +
-            "• Bolo no pote\n" +
-            "• Petit Gateau de doce de leite"
+            "Ah, no seu lugar eu também ia querer. Tem essas aqui, ó:\n\n" +
+            "1 - Pudim\n" +
+            "2 - Bolo no pote\n" +
+            "3 - Petit Gateau de doce de leite"
         ];
     }
 }

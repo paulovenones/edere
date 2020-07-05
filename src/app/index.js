@@ -16,14 +16,15 @@ function start(client) {
 		let foundClient = findClient(message.from);
 		userStage = getStage(foundClient);
 		if (userStage == 0) {
+
 			client.sendText(message.from, "Oi, aqui é a Édere!");
 			client.sendText(
 				message.from,
 				"Pra que eu possa te atender melhor, me conta se você é:\n\n" +
-					"1 - Uma pessoa com fome\n" +
-					"2 - Empreendedor de um restaurante\n" +
-					"3 - Produtor local de alimentos\n" +
-					"4 - Entregador"
+				"1 - Uma pessoa com fome\n" +
+				"2 - Empreendedor de um restaurante\n" +
+				"3 - Produtor local de alimentos\n" +
+				"4 - Entregador"
 			);
 
 			nextStage(foundClient);
@@ -33,6 +34,7 @@ function start(client) {
 				if (err) return;
 				return;
 			});
+
 		}
 		let responseFile = stages.step[userStage];
 		let responseArray = responseFile.obj.execute(message.from, message.body);

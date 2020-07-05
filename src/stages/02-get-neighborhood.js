@@ -12,3 +12,7 @@ function execute(user, message) {
 }
 
 exports.execute = execute;
+
+/*
+o que acontece se eu passar apenas o nome?
+*/

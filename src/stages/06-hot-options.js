@@ -7,19 +7,19 @@ function execute(user, message) {
 		return [
 			"Perfeito! As pessoas costumam dizer que eu tenho bom gosto mesmo 😅 " +
 			"Esses são os pratos que eu vejo que todo mundo gosta no seu bairro:",
-			"*Pizza Calabresa*\n" +
+			"1 - *Pizza Calabresa*\n" +
 			"Ingredientes: descrição\n" +
 			"_R$ 22,00_\n\n" +
-			"*Pizza Mussarela*\n" +
+			"2 - *Pizza Mussarela*\n" +
 			"Ingredientes: descrição\n" +
 			"_R$ 20,00_\n\n" +
-			"*Pizza Napolitana*\n" +
+			"3 - *Pizza Napolitana*\n" +
 			"Ingredientes: descrição\n" +
 			"_R$ 26,00_\n\n" +
-			"*Pizza Quatro Queijos*\n" +
+			"4 - *Pizza Quatro Queijos*\n" +
 			"Ingredientes: descrição\n" +
 			"_R$ 25,00_\n\n" +
-			"*Pizza Chocolate*\n" +
+			"5 - *Pizza Chocolate*\n" +
 			"Ingredientes: descrição\n" +
 			"_R$ 26,00_"
 		];

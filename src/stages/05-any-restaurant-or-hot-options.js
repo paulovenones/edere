@@ -14,7 +14,8 @@ function execute(user, message) {
 			"5 - @geltrano\n" +
 			"6 - @edevardo",
 			`E agora, ${foundClient.name}!? Prefere ver o cardápio de um deles ou quer que eu ` +
-			"te indique os 5 pratos dessa categoria que estão saindo mais na sua região?"
+			"te indique os 5 pratos dessa categoria que estão saindo mais na sua região?\n\n" +
+			"7 - Me indica aí!"
 		];
 	}
 	
