@@ -1,37 +1,5 @@
 {
   "clients": [
-    {
-      "id": 1,
-      "stage": 1,
-      "name": "",
-      "city": "",
-      "addressLine1": "",
-      "addressLine2": "",
-      "neighborhood": "",
-      "items": [],
-      "number": "5511966410551@c.us"
-    },
-    {
-      "id": 2,
-      "stage": 8,
-      "name": "Elionai",
-      "city": "Olinda",
-      "addressLine1": "",
-      "addressLine2": "",
-      "neighborhood": "Bultrins",
-      "items": [
-        {
-          "name": "Pizza Mussarela",
-          "price": "19.90",
-          "description": "Ingredientes: _descrição_"
-        },
-        {
-          "name": "Pizza Napolitana",
-          "price": "25.90",
-          "description": "Ingredientes: _descrição_"
-        }
-      ],
-      "number": "558186669938@c.us"
-    }
+    
   ]
 }

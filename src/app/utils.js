@@ -29,6 +29,7 @@ exports.addClient = function (number) {
 		addressLine1: "",
 		addressLine2: "",
 		number: `${number}`,
+		orderSummary: ""
 	});
 	fs.writeFile("src/data.json", JSON.stringify(data, null, 2), function (err) {
 		if (err) return;
@@ -62,6 +63,7 @@ exports.findClient = function (number) {
 			neighborhood: "",
 			items: [],
 			number: `${number}`,
+			orderSummary: ""
 		});
 		user = data.clients.find(function (client) {
 			if (number == client.number) {
