@@ -1,3 +1,6 @@
+# web whatsapp session
+tokens/*.json
+
 # Logs
 logs
 *.log

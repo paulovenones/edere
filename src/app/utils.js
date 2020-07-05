@@ -6,15 +6,14 @@ exports.welcome = function () {
 	client.sendText(
 		message.from,
 		"Pra que eu possa te atender melhor, me conta se você é:\n\n" +
-			"1 - Uma pessoa com fome\n" +
-			"2 - Empreendedor de um restaurante\n" +
-			"3 - Produtor local de alimentos\n" +
-			"4 - Entregador"
+		"1 - Uma pessoa com fome\n" +
+		"2 - Empreendedor de um restaurante\n" +
+		"3 - Produtor local de alimentos\n" +
+		"4 - Entregador"
 	);
 };
 
 exports.addClient = function (number) {
-	console.log("kkkkkkkkk");
 	let id = 1;
 	const lastClient = data.clients[data.clients.length - 1];
 
@@ -27,6 +26,8 @@ exports.addClient = function (number) {
 		items: [],
 		name: "",
 		city: "",
+		addressLine1: "",
+		addressLine2: "",
 		number: `${number}`,
 	});
 	fs.writeFile("src/data.json", JSON.stringify(data, null, 2), function (err) {
@@ -43,9 +44,8 @@ exports.findClient = function (number) {
 		}
 	});
 
-	// if is a new client
+	// if it's a new client
 	if (!user) {
-		console.log("nao achei");
 		let id = 1;
 		const lastClient = data.clients[data.clients.length - 1];
 
@@ -57,6 +57,8 @@ exports.findClient = function (number) {
 			stage: 0,
 			name: "",
 			city: "",
+			addressLine1: "",
+			addressLine2: "",
 			neighborhood: "",
 			items: [],
 			number: `${number}`,
