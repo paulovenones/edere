@@ -38,12 +38,12 @@ function execute(user, message) {
 		];
 
 	} else if (message.includes("4")) {
+		foundClient.stage = 34;
 		return [
-			"Ops! Ainda estamos trabalhando nessas opções. Por enquanto, apenas a opção 1 " +
-			"está disponível, mas em breve a ajeita tudo, tá?",
-			"Então, quer fazer algum pedido?\n\n" +
-			"1 - Sim, tô com fome!\n" +
-			"0 - Não. Outra hora a gente se fala, Édere"
+			"Você com certeza é um dos elos mais importantes nessa conexão que estamos criando. " +
+			"Fico muito feliz por você ter ficado interessado em se inscrever em meu banco de dados! " +
+			"Então vamos começar com dados básicos, ok?",
+			"Primeiro, me conta seu nome"
 		];
 
 	} else {

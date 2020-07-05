@@ -9,7 +9,7 @@ function execute(user, message) {
     return [
         "Maravilha. Preciso agora do endereço completo do seu estabelecimento, " +
         "com a rua, número, bairro e cidade. Olha, é só digitar como nesse exemplo:",
-        "Rua Nome da Rua, 123 - Nome do Bairro, Cidade"
+        "Rua Nome da Rua, 123, Bairro, Cidade"
     ];
 
 }

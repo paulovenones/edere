@@ -16,9 +16,8 @@ function execute(user, message) {
         nextStage(foundClient);
 
         return [
-            `${nameArray[0]}, é um prazer te receber aqui. Preciso de alguns dados ` +
-            "para cadastrarmos o seu restaurante, fica tranquilo que será rapidinho.",
-            "Agora me diz o nome do estabelecimento"
+            `${nameArray[0]}, é um prazer te receber aqui. E você mora aonde?`,
+            "Por favor, passa o endereço completo, desse jeito: _Rua Nome da Rua, 123, Bairro, Cidade_"
         ];
     }
 

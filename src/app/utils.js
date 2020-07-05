@@ -28,6 +28,7 @@ exports.addClient = function (number) {
 		city: "",
 		addressLine1: "",
 		addressLine2: "",
+		neighborhood: "",
 		number: `${number}`,
 		orderSummary: "",
 		storeName: ""
@@ -64,7 +65,22 @@ exports.findClient = function (number) {
 			neighborhood: "",
 			items: [],
 			number: `${number}`,
-			orderSummary: ""
+			orderSummary: "",
+			storeName: "",
+			storeCategory: "",
+			mostSold: [],
+			lessSold: [],
+			hotOptions: [],
+			socialNetwork: "",
+			distanceDelivery: "",
+			deliverymanInfo: "",
+			deliverymanId: "",
+			deliverymanDocPicture: {},
+			deliverymanVehicle: "",
+			deliverymanVehicleDocPicture: {},
+			didHeWorkBefore: "",
+			deliveryBasePrice: "",
+			acceptedPrice: true
 		});
 		user = data.clients.find(function (client) {
 			if (number == client.number) {
