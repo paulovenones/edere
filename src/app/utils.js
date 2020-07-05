@@ -29,7 +29,8 @@ exports.addClient = function (number) {
 		addressLine1: "",
 		addressLine2: "",
 		number: `${number}`,
-		orderSummary: ""		
+		orderSummary: "",
+		storeName: ""
 	});
 	fs.writeFile("src/data.json", JSON.stringify(data, null, 2), function (err) {
 		if (err) return;
