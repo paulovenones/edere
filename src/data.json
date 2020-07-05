@@ -1,13 +1,67 @@
 {
-	"clients": [
-		{
-			"id": 1,
-			"stage": 0,
-			"name": "Paulo",
-			"city": " São Paulo",
-			"neighborhood": "Campos Elíseos",
-			"items": [],
-			"number": "5511966410551@c.us"
-		}
-	]
+  "clients": [
+    {
+      "id": 1,
+      "stage": 0,
+      "name": "Cleber",
+      "city": " Campinas",
+      "neighborhood": "Bonfim",
+      "items": [],
+      "number": "5511966410551@c.us"
+    },
+    {
+      "id": 2,
+      "stage": 0,
+      "name": "Elionai",
+      "city": "Olinda",
+      "neighborhood": "Bultrins",
+      "items": [],
+      "number": "558186669938@c.us"
+    },
+    {
+      "id": 3,
+      "stage": 0,
+      "name": "",
+      "city": "",
+      "neighborhood": "",
+      "items": [],
+      "number": "558388078541@c.us"
+    },
+    {
+      "id": 4,
+      "stage": 0,
+      "name": "",
+      "city": "",
+      "neighborhood": "",
+      "items": [],
+      "number": "555491208294-1528724622@g.us"
+    },
+    {
+      "id": 5,
+      "stage": 0,
+      "name": "Pedro",
+      "city": " Olinda",
+      "neighborhood": "Bultrins",
+      "items": [],
+      "number": "558195269257@c.us"
+    },
+    {
+      "id": 6,
+      "stage": 0,
+      "name": "",
+      "city": "",
+      "neighborhood": "",
+      "items": [],
+      "number": "558187504620@c.us"
+    },
+    {
+      "id": 7,
+      "stage": 0,
+      "name": "",
+      "city": "",
+      "neighborhood": "",
+      "items": [],
+      "number": "558187504620-1572904375@g.us"
+    }
+  ]
 }

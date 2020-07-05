@@ -1,4 +1,3 @@
-// const database = require('../database');
 const { findClient, nextStage } = require("../app/utils");
 
 function execute(user, message) {
