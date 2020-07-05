@@ -8,7 +8,7 @@ function execute(user, message) {
 		"Você quer saber quais são eles ou prefere ver algumas opções de cardápio?\n\n" +
 		"1 - Restaurantes\n" +
 		"2 - Cardápio"
-	];
+	];	
 }
 
 exports.execute = execute;

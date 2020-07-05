@@ -2,7 +2,7 @@ const { findClient, nextStage } = require("../app/utils");
 
 function execute(user, message) {
 	foundClient = findClient(user);
-	foundClient.neighborhood = message;
+	foundClient.neighborhood = message.trim();
 	nextStage(foundClient);
 	return [
 		"Olha só, encontrei 25 restaurantes abertos na sua região! Do que você sente mais vontade de comer?",

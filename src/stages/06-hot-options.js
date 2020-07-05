@@ -2,7 +2,7 @@ const { findClient, nextStage } = require("../app/utils");
 
 function execute(user, message) {
 	foundClient = findClient(user);
-	if (message.toUpperCase().includes("INDI")) {
+	if (message.includes("7")) {
 		nextStage(foundClient);
 		return [
 			"Perfeito! As pessoas costumam dizer que eu tenho bom gosto mesmo 😅 " +
@@ -22,6 +22,20 @@ function execute(user, message) {
 			"5 - *Pizza Chocolate*\n" +
 			"Ingredientes: descrição\n" +
 			"_R$ 26,00_"
+		];
+	} else if (message.includes("#")) {
+		foundClient.stage = 0;
+		return [
+			`Tudo bem então${`, ` + foundClient.name}! Vou atender outros clientes agora, ` +
+			"mas é só você mandar um *oi* que eu volto 🎶 😜"
+		];
+	} else {
+		return [
+			"Ops! Acho que por enquanto a gente não vai conseguir " +
+			"te mostrar isso :(\n" +
+			"A gente ainda pode te indicar os pratos se você quiser. " +
+			"É só digitar *7*",
+			"Caso prefira, você pode cancelar tudo digitando *#*"
 		];
 	}
 }
