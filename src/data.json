@@ -2,10 +2,10 @@
   "clients": [
     {
       "id": 1,
-      "stage": 0,
-      "name": "Cleber",
-      "city": " Campinas",
-      "neighborhood": "Bonfim",
+      "stage": 6,
+      "name": "Paulo",
+      "city": "São Paulo",
+      "neighborhood": "Santa Cecília",
       "items": [],
       "number": "5511966410551@c.us"
     },

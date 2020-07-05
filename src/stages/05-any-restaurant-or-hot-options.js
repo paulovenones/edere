@@ -12,9 +12,9 @@ function execute(user, message) {
 			"3 - @beltrano\n" +
 			"4 - @cislano\n" +
 			"5 - @geltrano\n" +
-			"6 - @edevardo\n",
-			`E agora, ${foundClient.name}!? Prefere ver o cardápio de algum ou quer que eu ` +
-			"te indique os 5 pratos japoneses que estão saindo mais na sua região?"
+			"6 - @edevardo",
+			`E agora, ${foundClient.name}!? Prefere ver o cardápio de um deles ou quer que eu ` +
+			"te indique os 5 pratos dessa categoria que estão saindo mais na sua região?"
 		];
 	}
 	

@@ -30,7 +30,7 @@ function execute(user, message) {
 		"22 - Padaria\n" +
 		"23 - Poke\n" +
 		"24 - Sanduíche\n" +
-		"25 - Vegetariana\n"
+		"25 - Vegetariana"
 	];
 }
 

@@ -21,7 +21,7 @@ function execute(user, message) {
 			"_R$ 25,00_\n\n" +
 			"*Pizza Chocolate*\n" +
 			"Ingredientes: descrição\n" +
-			"_R$ 26,00_\n\n"
+			"_R$ 26,00_"
 		];
 	}
 }

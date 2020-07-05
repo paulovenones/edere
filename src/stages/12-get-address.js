@@ -7,7 +7,7 @@ function execute(user, message) {
 
         return [
             "Ótimo. Pode me mandar seu endereço pra eu já passar o seu pedido? " +
-            "Acho que você deve estar com fome já, de tanto zap zap 😜 " +
+            "Acho que você já deve estar com fome com tanto zap zap 😜 " +
             "Se quiser mais alguma coisa, é só dizer *ainda tô com fome* " +
             "que a gente continua esse papo"
         ];

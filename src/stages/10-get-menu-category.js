@@ -10,7 +10,7 @@ function execute(user, message) {
             "tem todas essas outras opções no cardápio:\n\n" +
             "• Entradas\n" +
             "• Acompanhamentos\n" +
-            "• Sobremesas\n"
+            "• Sobremesas"
         ];
     }
 }
