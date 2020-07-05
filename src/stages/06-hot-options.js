@@ -1,27 +1,39 @@
 const { findClient, nextStage } = require("../app/utils");
+const cardapio = require('../app/hot-options-menu')
+
+let numberOption = 0;
 
 function execute(user, message) {
 	foundClient = findClient(user);
+
 	if (message.includes("7")) {
-		nextStage(foundClient);
+
+		let responseMessage = "";
+
+		Object.keys(cardapio.menu).forEach(element => {
+
+			numberOption++;
+
+			let stringPrice = "";
+			stringPrice += cardapio.menu[element].price[0];
+			stringPrice += cardapio.menu[element].price[1];
+			stringPrice += ",";
+			stringPrice += cardapio.menu[element].price[3];
+			stringPrice += cardapio.menu[element].price[4];
+
+			let name = cardapio.menu[element].name;
+			let description = cardapio.menu[element].description;
+
+			responseMessage += `${numberOption} - *${name}*\n${description}\nR$ ${stringPrice}\n\n`;
+
+		});
+
+		console.log(numberOption)
+
 		return [
 			"Perfeito! As pessoas costumam dizer que eu tenho bom gosto mesmo 😅 " +
 			"Esses são os pratos que eu vejo que todo mundo gosta no seu bairro:",
-			"1 - *Pizza Calabresa*\n" +
-			"Ingredientes: descrição\n" +
-			"_R$ 22,00_\n\n" +
-			"2 - *Pizza Mussarela*\n" +
-			"Ingredientes: descrição\n" +
-			"_R$ 20,00_\n\n" +
-			"3 - *Pizza Napolitana*\n" +
-			"Ingredientes: descrição\n" +
-			"_R$ 26,00_\n\n" +
-			"4 - *Pizza Quatro Queijos*\n" +
-			"Ingredientes: descrição\n" +
-			"_R$ 25,00_\n\n" +
-			"5 - *Pizza Chocolate*\n" +
-			"Ingredientes: descrição\n" +
-			"_R$ 26,00_"
+			responseMessage
 		];
 	} else if (message.includes("#")) {
 		foundClient.stage = 0;
@@ -29,6 +41,27 @@ function execute(user, message) {
 			`Tudo bem então${`, ` + foundClient.name}! Vou atender outros clientes agora, ` +
 			"mas é só você mandar um *oi* que eu volto 🎶 😜"
 		];
+	} else if (message.includes("*")) {
+		nextStage(foundClient);		
+		
+		return[
+			"Certo, tudo salvo!",
+			//mostrar items e valor total
+			"Aqui está seu pedido: ",
+			"Digite *** mais uma vez para confirmar"
+		];
+
+	} else if (message.includes(`${parseInt(message.trim()) <= numberOption ? message.trim() : false}`)) {
+
+		console.log(foundClient.items.push(cardapio.menu[message.trim()]));
+
+		return [
+			`Certo! O item ${cardapio.menu[message.trim()].name} já tá separado pra você.`,
+			"Se quiser adicionar mais algum item é só digitar o número. " +
+			"Caso queria finalizar, pode digitar ***, tá?",
+			"Ah, e você pode cancelar tudo digitando *#*."
+		];
+
 	} else {
 		return [
 			"Ops! Acho que por enquanto a gente não vai conseguir " +

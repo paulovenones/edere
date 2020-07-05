@@ -2,27 +2,36 @@
   "clients": [
     {
       "id": 1,
-      "stage": 0,
-      "name": "Elionai",
-      "city": "Olinda",
+      "stage": 1,
+      "name": "",
+      "city": "",
       "addressLine1": "",
-      "addressLine2": "perto do Colégio Lions",
-      "neighborhood": "Bultrins",
+      "addressLine2": "",
+      "neighborhood": "",
       "items": [],
-      "number": "558186669938@c.us",
-      "address": "Rua Antônio Dias, 68"
+      "number": "5511966410551@c.us"
     },
     {
       "id": 2,
-      "stage": 1,
-      "name": "Mari",
-      "city": "São Pedro",
+      "stage": 6,
+      "name": "Elionai",
+      "city": "Olinda",
       "addressLine1": "",
-      "addressLine2": "Rio Tietê",
-      "neighborhood": "Bela são Pedro",
-      "items": [],
-      "number": "5511966410551-1593305178@g.us",
-      "address": "Obrigada"
+      "addressLine2": "",
+      "neighborhood": "Bultrins",
+      "items": [
+        {
+          "name": "Pizza Mussarela",
+          "price": "19.90",
+          "description": "Ingredientes: _descrição_"
+        },
+        {
+          "name": "Pizza Napolitana",
+          "price": "25.90",
+          "description": "Ingredientes: _descrição_"
+        }
+      ],
+      "number": "558186669938@c.us"
     }
   ]
 }

@@ -3,8 +3,8 @@ const { findClient, nextStage } = require("../app/utils");
 function execute(user, message) {
 	foundClient = findClient(user);
 
-	if (message.includes("1")) {		
-		nextStage(foundClient);		
+	if (message.includes("1")) {
+		nextStage(foundClient);
 		return [
 			"Que ótimo! Acabei de comer por aqui e posso te indicar uns restaurantes" +
 			"bem legais. Me diga seu nome e, em seguida, sua cidade, separados por vírgula.",
@@ -16,7 +16,7 @@ function execute(user, message) {
 			`Tudo bem então${`, ` + foundClient.name}! Vou atender outros clientes agora, ` +
 			"mas é só você mandar um *oi* que eu volto 🎶 😜"
 		];
-	} else {
+	} else if (message.includes("2") || message.includes("3") || message.includes("4")) {
 		return [
 			"Ops! Ainda estamos trabalhando nessas opções. Por enquanto, apenas a opção 1 " +
 			"está disponível, mas em breve a ajeita tudo, tá?",
@@ -25,7 +25,7 @@ function execute(user, message) {
 			"0 - Não. Outra hora a gente se fala, Édere"
 		];
 
-	}
+	} else {}
 }
 
 exports.execute = execute;
