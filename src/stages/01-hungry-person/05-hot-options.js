@@ -28,16 +28,16 @@ function execute(user, message) {
 
 		return [
 			"Perfeito! As pessoas costumam dizer que eu tenho bom gosto mesmo 😅 " +
-				"Esses são os pratos que eu vejo que todo mundo gosta no seu bairro:",
+			"Esses são os pratos que eu vejo que todo mundo gosta no seu bairro:",
 			responseMessage,
 		];
 	} else if (message.includes("#")) {
 		foundClient.stage = 0;
 		return [
 			`Tudo bem então${
-				`, ` + foundClient.name
+			`, ` + foundClient.name
 			}! Vou atender outros clientes agora, ` +
-				"mas é só você mandar um *oi* que eu volto 🎶 😜",
+			"mas é só você mandar um *oi* que eu volto 🎶 😜",
 		];
 	} else if (message.includes("*")) {
 		nextStage(foundClient);
@@ -65,27 +65,22 @@ function execute(user, message) {
 			//pedir confirmação
 			"Digite * mais uma vez para confirmar",
 		];
-	} else if (
-		message.includes(
-			`${parseInt(message.trim()) <= numberOption ? message.trim() : false}`
-		)
-	) {
-		foundClient.items.push(cardapio.menu[message.trim()]);
+	} else if (message.includes(`${parseInt(message.trim()) <= numberOption ? message.trim() : false}`)) {
+
+		console.log(foundClient.items.push(cardapio.menu[message.trim()]))
 
 		return [
-			`Certo! O item ${
-				cardapio.menu[message.trim()].name
-			} já tá separado pra você.`,
+			`Certo! O item ${cardapio.menu[message.trim()].name} já tá separado pra você.`,
 			"Se quiser adicionar mais algum item é só digitar o número. " +
-				"Caso queria finalizar, pode digitar *, tá?",
+			"Caso queria finalizar, pode digitar *, tá?",
 			"Ah, e você pode cancelar tudo digitando *#*.",
 		];
 	} else {
 		return [
 			"Ops! Acho que por enquanto a gente não vai conseguir " +
-				"te mostrar isso :(\n" +
-				"A gente ainda pode te indicar os pratos se você quiser. " +
-				"É só digitar *7*",
+			"te mostrar isso :(\n" +
+			"A gente ainda pode te indicar os pratos se você quiser. " +
+			"É só digitar *7*",
 			"Caso prefira, você pode cancelar tudo digitando *#*",
 		];
 	}

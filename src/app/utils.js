@@ -19,7 +19,29 @@ exports.findClient = function (number) {
 		data.clients.push({
 			id,
 			stage: 0,
+			name: "",
+			city: "",
+			addressLine1: "",
+			addressLine2: "",
+			neighborhood: "",
+			items: [],
 			number: `${number}`,
+			orderSummary: "",
+			storeName: "",
+			storeCategory: "",
+			mostSold: "",
+			lessSold: "",
+			hotOptions: [],
+			socialNetwork: "",
+			distanceDelivery: "",
+			deliverymanInfo: "",
+			deliverymanId: "",
+			deliverymanDocPicture: {},
+			deliverymanVehicle: "",
+			deliverymanVehicleDocPicture: {},
+			didHeWorkBefore: "",
+			deliveryBasePrice: "",
+			acceptedPrice: true
 		});
 		user = data.clients.find(function (client) {
 			if (number == client.number) {

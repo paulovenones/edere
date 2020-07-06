@@ -2,8 +2,7 @@ const { findClient, nextStage } = require("../../app/utils");
 
 function execute(user, message) {
     foundClient = findClient(user);
-    let lessSoldArray = message.trim().split(", ");
-    foundClient.lessSold.push(lessSoldArray);
+    foundClient.lessSold = message.trim();
 
     nextStage(foundClient);
 

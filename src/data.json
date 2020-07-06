@@ -1,3 +1,37 @@
 {
-	"clients": []
+  "clients": [
+    {
+      "id": 1,
+      "stage": 49,
+      "name": "Paulo",
+      "city": "jejsjsh",
+      "addressLine1": "Jwususvshsu",
+      "addressLine2": "ushebejsbs",
+      "neighborhood": "jwusjbsns",
+      "items": [
+        {
+          "name": "Pizza Quatro Queijos",
+          "price": "24.90",
+          "description": "Ingredientes: _descrição_"
+        }
+      ],
+      "number": "5511966410551@c.us",
+      "orderSummary": "",
+      "storeName": "",
+      "storeCategory": "",
+      "mostSold": "",
+      "lessSold": "",
+      "hotOptions": [],
+      "socialNetwork": "",
+      "distanceDelivery": "200km",
+      "deliverymanInfo": "",
+      "deliverymanId": "Lwiwheiwow",
+      "deliverymanDocPicture": {},
+      "deliverymanVehicle": "Iwjwhehwjwjwjw",
+      "deliverymanVehicleDocPicture": {},
+      "didHeWorkBefore": "",
+      "deliveryBasePrice": "3",
+      "acceptedPrice": true
+    }
+  ]
 }
