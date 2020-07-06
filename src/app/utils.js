@@ -19,6 +19,7 @@ exports.findClient = function (number) {
 		data.clients.push({
 			id,
 			stage: 0,
+			number: `${number}`,
 		});
 		user = data.clients.find(function (client) {
 			if (number == client.number) {
