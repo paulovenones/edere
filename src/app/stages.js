@@ -131,6 +131,46 @@ let stages = {
 		descricao: "eighth-local-producer",
 		obj: require("../stages/03-local-producer/09-done.js"),
 	},
+	40: {
+		descricao: "first-deliveryman",
+		obj: require("../stages/04-deliveryman/01-get-address.js"),
+	},
+	41: {
+		descricao: "second-deliveryman",
+		obj: require("../stages/04-deliveryman/02-get-id.js"),
+	},
+	42: {
+		descricao: "third-deliveryman",
+		obj: require("../stages/04-deliveryman/03-get-doc-picture.js"),
+	},
+	43: {
+		descricao: "fourth-deliveryman",
+		obj: require("../stages/04-deliveryman/04-get-vehicle-info.js"),
+	},
+	44: {
+		descricao: "fifth-deliveryman",
+		obj: require("../stages/04-deliveryman/05-get-vehicle-doc-picture.js"),
+	},
+	45: {
+		descricao: "sixth-deliveryman",
+		obj: require("../stages/04-deliveryman/06-get-delivery-area.js"),
+	},
+	46: {
+		descricao: "seventh-deliveryman",
+		obj: require("../stages/04-deliveryman/07-did-he-worked-before.js"),
+	},
+	47: {
+		descricao: "eighth-deliveryman",
+		obj: require("../stages/04-deliveryman/08-get-base-price.js"),
+	},
+	48: {
+		descricao: "ninth-deliveryman",
+		obj: require("../stages/04-deliveryman/09-do-he-agree-base-price.js"),
+	},
+	49: {
+		descricao: "tenth-deliveryman",
+		obj: require("../stages/04-deliveryman/10-end.js"),
+	},
 };
 
 exports.step = stages;
