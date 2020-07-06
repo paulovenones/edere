@@ -1,7 +1,7 @@
 let stages = {
 	1: {
 		descricao: "door",
-		obj: require("../stages/02-entrepreneur/01-get-store-name.js"),
+		obj: require("../stages/01-get-city-and-name"),
 	},
 	2: {
 		descricao: "first-hungry-person",
@@ -20,7 +20,7 @@ let stages = {
 		obj: require("../stages/01-hungry-person/04-any-restaurant-or-hot-options.js"),
 	},
 	6: {
-		descricao: "fiveth-hungry-person",
+		descricao: "fifth-hungry-person",
 		obj: require("../stages/01-hungry-person/05-hot-options.js"),
 	},
 	7: {
@@ -57,113 +57,80 @@ let stages = {
 	},
 	15: {
 		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		obj: require("../stages/02-entrepreneur/01-get-store-name.js"),
 	},
 	16: {
-		descricao: "first-entrepreneur",
+		descricao: "second-entrepreneur",
 		obj: require("../stages/02-entrepreneur/02-get-address.js"),
 	},
 	17: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "third-entrepreneur",
+		obj: require("../stages/02-entrepreneur/03-store-category.js"),
 	},
 	18: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "fourth-entrepreneur",
+		obj: require("../stages/02-entrepreneur/04-most-sold.js"),
 	},
 	19: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "fifth-entrepreneur",
+		obj: require("../stages/02-entrepreneur/05-less-sold.js"),
 	},
 	20: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "sixth-entrepreneur",
+		obj: require("../stages/02-entrepreneur/06-get-photos.js"),
 	},
 	21: {
 		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		obj: require("../stages/02-entrepreneur/07-hot-options-from-menu.js"),
 	},
 	22: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "seventh-entrepreneur",
+		obj: require("../stages/02-entrepreneur/08-get-social-network.js"),
 	},
 	23: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "eighth-entrepreneur",
+		obj: require("../stages/02-entrepreneur/09-get-more-details.js"),
 	},
 	24: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "ninth-entrepreneur",
+		obj: require("../stages/02-entrepreneur/10-get-info-about-deliveryman.js"),
 	},
 	25: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	26: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	27: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	28: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	29: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "tenth-entrepreneur",
+		obj: require("../stages/02-entrepreneur/11-end.js"),
 	},
 	30: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "first-local-producer",
+		obj: require("../stages/03-local-producer/02-establishment-name.js"),
 	},
 	31: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "second-local-producer",
+		obj: require("../stages/03-local-producer/03-get-address.js"),
 	},
 	32: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "third-local-producer",
+		obj: require("../stages/03-local-producer/04-products.js"),
 	},
 	33: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "fourth-local-producer",
+		obj: require("../stages/03-local-producer/05-most-sold.js"),
 	},
 	34: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "fifth-local-producer",
+		obj: require("../stages/03-local-producer/06-less-sold.js"),
 	},
 	35: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "sixth-local-producer",
+		obj: require("../stages/03-local-producer/07-social-media.js"),
 	},
 	36: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "seventh-local-producer",
+		obj: require("../stages/03-local-producer/08-delivery.js"),
 	},
 	37: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
+		descricao: "eighth-local-producer",
+		obj: require("../stages/03-local-producer/09-done.js"),
 	},
-	38: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	39: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	40: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-	41: {
-		descricao: "first-entrepreneur",
-		obj: require("../stages/02-entrepreneur/02-get-address.js"),
-	},
-
 };
 
 exports.step = stages;

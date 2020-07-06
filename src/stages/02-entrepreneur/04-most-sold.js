@@ -2,15 +2,13 @@ const { findClient, nextStage } = require("../../app/utils");
 
 function execute(user, message) {
     foundClient = findClient(user);
+    foundClient.storeCategory = message.trim();
 
-    if (message.includes("")) {
-        nextStage(foundClient);
+    nextStage(foundClient);
 
-        return [
-
-        ];
-
-    }
+    return [
+        "Ótimo. E o que você mais vende?"
+    ];
 
 }
 
